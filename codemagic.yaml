@@ -5,9 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       android_signing:
-        - key
-      groups:
-        - google_play
+        - key      
       vars:
         PACKAGE_NAME: "com.nativeandroid"
     scripts:
