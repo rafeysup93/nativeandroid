@@ -5,9 +5,7 @@ workflows:
     instance_type: mac_mini_m1
     environment:
       android_signing:
-        - key
-      groups:
-        - keystore_credentials   
+        - reference        
       vars:
         PACKAGE_NAME: "com.nativeandroid"
     scripts:
